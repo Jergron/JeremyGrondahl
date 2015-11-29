@@ -1,7 +1,8 @@
 define([
   'angular',
   'angularRoute',
-  'angularAnimate'
+  'angularAnimate',
+  'uiBoot'
 ], function(angular) {
   angular.module("JeremyGrondahl.portfolio", ['ngRoute', 'ngAnimate'])
   .config(['$routeProvider', function($routeProvider) {
@@ -13,8 +14,24 @@ define([
   ["$scope", "$animate",
   function($scope, $animate) {
 
-  $( ".main" ).css( "color", "blue" );
+    $(document).ready(function (){
+      $('body').css('opacity', '0').fadeTo(1500, 1,'swing'); 
+    });
 
-  }
-  ]);
+    $scope.myInterval = 0;
+    $scope.slides = [
+      {
+        url: 'partials/intro.html'
+      },
+      {
+        url: 'partials/about.html'
+      },
+      {
+        url: 'partials/projects.html'
+      }
+    ];
+
+
+  
+  }]);
 });

@@ -1,15 +1,39 @@
 <div class="main">
-  <div id="scroll" class="container">
-    <div class="row">
-      <div class="col-sm-3">
-        <h2>Jeremy</h2>
-      </div>
-      <div class="col-sm-3">
-        <img src="https://en.opensuse.org/images/4/49/Amarok-logo-small.png">
-      </div>
-      <div class="col-sm-6">
-        <h2>Grondahl</h2>
-      </div>
-    </div>  
+  <nav>
+    <ul class="breadcrumb">
+      <li><a href="">About</a></li>
+      <li><a href="">Resume</a></li>
+      <li><a href="">Projects</a></li>
+    </ul>
+    <p class="ng-hide">Jeremy Grondahl</p>
+  </nav>
+  <div id="scroll"> 
+    <uib-carousel interval="myInterval">
+      <uib-slide  actual ng-repeat="slide in slides">
+        <div ng-include="slide.url" [onload="data-onload"]></div>
+      </uib-slide>
+    </uib-carousel>
   </div>
-</div>
+  <div>
+    <div>
+      <img class="proPic" src="images/jeremy_gravatar.jpeg">
+      <p style="text-align: center">jeremygrondahl@gmail.com</p>
+    </div>
+  </div>
+  <div style="text-align: center" class="container">    
+    <div class=" middle row">
+      <div class="col-xs-4">
+        <a href="https://github.com/Jergron"><img class="icon" src="images/github-10-xxl.png"></a>
+      </div>
+      <div class="projects col-xs-4">
+       <a href="https://www.linkedin.com/in/jeremygrondahl"><img class="icon" src="images/linkedin.png"></a>
+      </div>
+      <div class="projects col-xs-4">
+       <a href="https://twitter.com/JeremyGrondahl"><img class="icon" src="images/twitter.png"></a>
+      </div>
+    </div> 
+  <p style="text-align: center">Nashville, TN</p>
+  <p style="text-align: center">&copy Jeremy Grondahl</p>
+  </div>
+</div> 
+
