@@ -1,3 +1,74 @@
+/********************
+       GENERAL
+********************/
+body {
+  background: url("../images/narrative.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif; }
 
+.nav, .pagination, .carousel, .panel-title a {
+  cursor: pointer; }
+
+/********************
+        MAIN
+********************/
+#bootstrap-overrides ul {
+  background-color: transparent; }
+
+#bootstrap-overrides a {
+  color: #B940FB;
+  text-decoration: none; }
+
+#bootstrap-overrides a:hover {
+  color: #E0B9A9; }
+
+.carousel-control {
+  display: none; }
+
+.carousel-inner {
+  height: auto; }
+
+.carousel-control:hover {
+  display: block; }
+
+#scroll {
+  margin-top: 150px; }
+
+.proPic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  border: 15px dotted gold;
+  width: 15%; }
+
+.icon {
+  width: 15%;
+  color: #808080; }
+
+.icon:hover {
+  width: 17%; }
+
+/********************
+        INTRO
+********************/
+.middle {
+  padding-top: 70px;
+  padding-bottom: 81px; }
+
+.name {
+  font-size: 45px;
+  letter-spacing: 27px;
+  color: gold; }
+
+.title {
+  letter-spacing: 17px;
+  color: gold; }
+
+/********************
+      PROJECTS
+********************/
+.projects {
+  margin-bottom: 20px; }
 
 /*# sourceMappingURL=main.css.map */
