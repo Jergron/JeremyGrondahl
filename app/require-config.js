@@ -3,12 +3,14 @@ require.config({
     angular: '../lib/bower_components/angular/angular',
     angularRoute: '../lib/bower_components/angular-route/angular-route',
     angularAnimate: '../lib/bower_components/angular-animate/angular-animate.min',
-    jquery: '../lib/bower_components/jquery/dist/jquery.min'
+    jquery: '../lib/bower_components/jquery/dist/jquery.min',
+    uiBoot: '../lib/bower_components/angular-bootstrap/ui-bootstrap-tpls.min'
   },
   shim: {
     'angular' : {'exports' : 'angular'},
     'angularRoute': ['angular'],
-    'angularAnimate': ['angular']
+    'angularAnimate': ['angular'],
+    'uiBoot': ['angular']
   },
   priority: [
     "angular",
