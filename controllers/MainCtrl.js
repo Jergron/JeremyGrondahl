@@ -14,10 +14,6 @@ define([
   ["$scope", "$animate",
   function($scope, $animate) {
 
-    $(document).ready(function (){
-      $('body').css('opacity', '0').fadeTo(1500, 1,'swing'); 
-    });
-
     $scope.myInterval = 0;
     $scope.slides = [
       {
@@ -31,7 +27,9 @@ define([
       }
     ];
 
-
+    $(document).ready(function (){
+      $('body').css('opacity', '0').fadeTo(1500, 1,'swing'); 
+    });
   
   }]);
 });
