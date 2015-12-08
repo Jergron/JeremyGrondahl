@@ -3,10 +3,16 @@
 ********************/
 
 body{
-  background: url("../images/narrative.jpg") no-repeat center center fixed;
+  background-image: url("/images/ocean.jpg");
   background-size: cover;
-  font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
   // background-color: #F7F4D0;
+  font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+p, h2, h3{
+  color: #D6CDC3;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  0px 8px 13px rgba(0,0,0,0.1),
+  0px 18px 23px rgba(0,0,0,0.1);
 }
 
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
@@ -19,43 +25,57 @@ body{
   background-color: transparent; 
 }
 #bootstrap-overrides a{
-  color: #B940FB;
+  color: transparent;
   text-decoration: none;
 }
 #bootstrap-overrides a:hover {
-  color: #E0B9A9;
+  color: #D6CDC3;
+  opacity: .3;
 }
+
 .carousel-control {
+background: transparent !important;
+  &:hover {
+
+  }
+}
+.carousel-indicators {
   display: none;
 }
 .carousel-inner {
-   height: auto;
+  height: auto;
+  // background-color: #B940FB;
+  background-image: url("/images/wood.jpg");
+  background-size: cover;
+  min-height: 271px;
+  max-height: 271px;
+  border-bottom: 3px solid #D6CDC3;
 }
 .carousel-control:hover {
   display: block;
 }
 
-#scroll {
-  margin-top: 150px;
-}
 
 .proPic {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 65px;
   border-radius: 100%;
-  border: 15px dotted gold;
+  border: 15px double #D6CDC3;
   width: 15%;
+  min-height: 100px;
+  min-width: 100px;
 }
 
 .icon{
   width:15%;
   color: #808080;
 }
-.icon:hover{
-  width:17%;
-}
 
+.social-tags {
+  margin-top: 10px;
+}
 
 /********************
         INTRO
@@ -67,13 +87,22 @@ body{
 }
 
 .name {
+  text-align: center;
   font-size: 45px;
+  font-weight: 700;
   letter-spacing: 27px;
-  color: gold;
+  color: #7BD585;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  0px 8px 13px rgba(0,0,0,0.1),
+  0px 18px 23px rgba(0,0,0,0.1);
 }
 .title {
+  text-align: center;
   letter-spacing: 17px;
-  color: gold;
+  color: #95E4A8;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  0px 8px 13px rgba(0,0,0,0.1),
+  0px 18px 23px rgba(0,0,0,0.1);
 }
 
 
@@ -84,7 +113,7 @@ body{
 ********************/
 
 .projects {
-  margin-bottom: 20px;
+  padding-top: 35px;
 }
 
 
